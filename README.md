@@ -16,7 +16,9 @@ Setup the html structure like:
 
 and in your JS call:
 
-$(window).load($('.boxes').eqHeights('equilize')); //use window.load if you have images in your boxes.
+$(window).load(function() {
+    $('.boxes').eqHeights('equilize')); //use window.load if you have images in your boxes.
+}
 $(window).resize(function () {
     $('.boxes').eqHeights(window.innerWidth > 320 ? 'equilize' : 'destroy');  
 });
